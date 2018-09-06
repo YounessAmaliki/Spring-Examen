@@ -11,35 +11,24 @@ public class Joke {
     @GeneratedValue
 
     @Column
-    private String firstName;
+    private String joke;
 
-	@Column
-    private String lastName;
-    
-    @Column
-    private int grade;
 
     public Joke() {}
     
-    public Joke(String firstName, String lastName) {
-	    	this.firstName = firstName;
-	    	this.lastName = lastName;
+    public Joke(String joke) {
+	    	this.joke = joke;
+
     }
+
+	public String getJoke() {
+		return joke;
+	}
+
+	public void setJoke(String joke) {
+		this.joke = joke;
+	}
     
-    public String getFirstName() {
-		return firstName;
-	}
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-
-	public String getLastName() {
-		return lastName;
-	}
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
 
 }

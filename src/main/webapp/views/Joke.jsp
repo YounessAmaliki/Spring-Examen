@@ -36,7 +36,11 @@
 
 		<div class="starter-template">
 			<h1>Spring Boot Web JSP Example</h1>
-			<h2>Message: ${joke}</h2>
+			<form action="RandomJoke" method="post">
+    		Fname:<input type="text" id="firstName" placeholder="type first name"/>
+    		Lname:<input type="text" id="lastName" placeholder="type Last name"/>
+    		<input type="submit" value="ok"/>
+</form>
 		</div>
 
 	</div>
