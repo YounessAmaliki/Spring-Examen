@@ -13,8 +13,10 @@ public class JokeController {
        
    @RequestMapping("/joke")
    public String joke() {
-	   return "";
-   }
+	   public String joke(@RequestParam("firstName") String firstName, @RequestParam("lastName") String lastName) {
+		   
+	   }
+	   }
 		   
    @RequestMapping("/joke_post")
    public String joke_post() {
